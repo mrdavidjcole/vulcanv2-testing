@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="welcome">
+      <p>
+        Hi! On this this Wistia video, we use the new Controls API (along with the <a href="https://wistia.com/doc/plugin-api">Plugin</a> & <a href="https://wistia.com/doc/player-api">Player</a> APIs) to add custom controls to the player. 🤖✨ 
+      </p>
+      <p>
+        We haven't published the docs for it yet. They're coming soon! Email support@wistia.com if you'd like to start experimenting with this stuff and have any questions. Otherwise, just get to remixing. 💽💽
+      </p>
+    </div>
+    
+    <script>
+      window._wq = window._wq || [];
+      _wq.push({
+        id: "_all",
+        options: {
+          plugin: {
+            // "back-ten-seconds": {
+            //   src: "back-ten-seconds.js"
+            // },
+            // "control-with-dialog": {
+            //   src: "control-with-dialog.js"
+            // },
+            // "watermark": {
+            //   src: "watermark.js",
+            //   imageUrl: 'https://glitch.com/edit/images/emojis/fire.png',
+            //   opacity: 1
+            // },
+            "dependent-control": {
+              src: "dependent-control.js"
+            }
+          }
+        }
+      });
+    </script>
+    
+    
+<!--     <div class="video_wrapper">
+      <script src="https://fast.wistia.com/embed/medias/8hqsib4kxh.jsonp" async></script>
+      <script src="https://fast.wistia.com/assets/external/E-v1-with-vulcan-v2.js" async></script>
+      <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+          <div class="wistia_embed wistia_async_8hqsib4kxh seo=false videoFoam=true playerPreference=vulcan-v2" style="height:100%;width:100%">&nbsp;</div>
+        </div>
+      </div>
+    </div> -->
+    
+<!--   local embed   -->
+    <div class="video_wrapper">
+      <script src="https://fast.wistia.dev/embed/medias/6w1z3vx3hy.jsonp" async></script>
+      <script src="https://fast.wistia.dev/assets/external/E-v1.js" async></script>
+      <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+          <div class="wistia_embed wistia_async_6w1z3vx3hy seo=false videoFoam=true playerPreference=vulcan-v2" style="height:100%;width:100%">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Glitch button -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    <!-- A little script to add a "More [Team Name] Projects" button to that 👆 -->
+<!--     <script src="https://team-projects-button.glitch.me/js/team-projects-button.js"></script> -->
+
+  </body>
+</html>
